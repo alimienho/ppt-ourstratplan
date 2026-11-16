@@ -862,6 +862,40 @@ jQuery(document).ready(function($) {
             $el.removeClass('elementor-invisible').addClass('animated ' + animation);
         });
     }, 800);
+
+    // 3. Smooth scroll for anchor links and "Back to top" buttons
+    $(document).on('click', 'a[href^="#"]', function(e) {
+        var href = $(this).attr('href');
+        if (!href || href === '#' || href === '#!') return;
+        
+        var targetId = href.replace(/^#/, '');
+        var targetEl = document.getElementById(targetId);
+        
+        if (targetEl) {
+            e.preventDefault();
+            var headerHeight = 120;
+            var $deskHeader = $('#qodef-page-header');
+            var $mobHeader = $('#qodef-page-mobile-header');
+            if ($mobHeader.is(':visible')) {
+                headerHeight = $mobHeader.outerHeight() || 70;
+            } else if ($deskHeader.is(':visible')) {
+                headerHeight = $deskHeader.outerHeight() || 120;
+            }
+            
+            var targetOffset = $(targetEl).offset().top - headerHeight + 5;
+            if (targetOffset < 0) targetOffset = 0;
+
+            $('html, body').stop().animate({
+                scrollTop: targetOffset
+            }, 800, function() {
+                if (history.pushState) {
+                    history.pushState(null, null, href);
+                } else {
+                    window.location.hash = href;
+                }
+            });
+        }
+    });
 });
 } catch (e) {
     console.warn("Module error in [custom script]:", e);

@@ -6484,3 +6484,67 @@ ol:not(.wp-block), ul:not(.wp-block) {
     51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 */
 .modern-footnotes-footnote{padding-left:2px;padding-right:2px;line-height:initial}.modern-footnotes-footnote--selected{background:#eee;border-radius:2px}.modern-footnotes-footnote__connector{background:#000;position:absolute;width:.9px}.modern-footnotes-footnote a{text-decoration:none}.modern-footnotes-footnote__note{display:none;font-size:80%;color:#777}.modern-footnotes-footnote__note a{display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;vertical-align:bottom}.modern-footnotes-footnote__note--tooltip{position:absolute;left:0;border:1px solid #666;background:#fff;padding:.7em 1em;border-radius:3px;max-width:300px;box-shadow:1px 1px 1px #eee;box-sizing:border-box;z-index:1}.modern-footnotes-footnote__note--tooltip:focus{outline:0}.modern-footnotes-footnote__note--expandable{display:block;margin-top:1em;margin-bottom:1em}.modern-footnotes-scroll-to-reference{font-size:110%;margin-left:.2em}.modern-footnotes-list{list-style-type:none;font-size:.8em;margin:1em 0;padding-left:0}.modern-footnotes-list li{display:flex;margin-bottom:.3em}.modern-footnotes-list li>span{margin-right:1.5em;color:#777;word-wrap:normal;word-break:normal}.modern-footnotes-list--show-only-for-print,.modern-footnotes-list-heading--show-only-for-print{display:none}@media print{.modern-footnotes-list--show-only-for-print,.modern-footnotes-list-heading--show-only-for-print{display:block}.modern-footnotes-list--hide-for-print,.modern-footnotes-list-heading--hide-for-print,.modern-footnotes-scroll-to-footnote,.modern-footnotes-scroll-to-reference{display:none}}
+
+
+/* ===== Header & Hamburger Menu First-Load Fix ===== */
+#qodef-page-header {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    max-width: 100vw !important;
+    height: 120px !important;
+    z-index: 1000 !important;
+    background-color: transparent !important;
+    margin-top: 0 !important;
+    display: block !important;
+}
+
+@media only screen and (max-width: 1024px) {
+    #qodef-page-header {
+        display: none !important;
+    }
+    #qodef-page-mobile-header {
+        display: block !important;
+        position: relative !important;
+        width: 100% !important;
+        z-index: 1000 !important;
+    }
+}
+
+#qodef-page-header-inner {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    padding: 0 40px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    height: 100% !important;
+}
+
+.qodef-opener-icon.qodef-fullscreen-menu-opener {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    cursor: pointer !important;
+    z-index: 1001 !important;
+    color: #571747;
+}
+
+.qodef-fullscreen-menu--opened .qodef-opener-icon.qodef-fullscreen-menu-opener {
+    color: #fff !important;
+}
+
+.qodef-opener-icon.qodef-fullscreen-menu-opener .qodef-m-icon.qodef--open {
+    visibility: visible !important;
+    display: inline-block !important;
+}
+
+.qodef-opener-icon.qodef-fullscreen-menu-opener svg {
+    display: block !important;
+    width: 40px !important;
+    height: auto !important;
+}

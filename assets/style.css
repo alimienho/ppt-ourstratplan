@@ -80053,6 +80053,7 @@ h1.entry-title {
   color: #1E1D1D;
   border-radius: 30px 30px 30px 30px;
   padding: 15px 15px 15px 15px;
+  font-family: 'Roboto', sans-serif !important;
 }
 
 .elementor-8291 .elementor-element.elementor-element-e9cdaa6 .elementor-button:hover,

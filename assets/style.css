@@ -6560,3 +6560,121 @@ section[id],
 div[id] {
     scroll-margin-top: 130px;
 }
+
+
+/* ===== Typography & Exact Line-Height Matching ===== */
+body {
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+    font-size: 20px !important;
+    font-weight: 400 !important;
+    line-height: 26px !important;
+    color: #2b2b2b;
+    background-color: #f5f2e2;
+}
+
+/* Default Paragraph & Text Editor Line-Height: 26px */
+p,
+.elementor-widget-text-editor,
+.elementor-widget-text-editor p,
+.elementor-tab-content,
+.elementor-tab-content p {
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px !important;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+p:last-child {
+    margin-bottom: 0;
+}
+
+/* Accordion typography */
+.elementor-accordion .elementor-accordion-title {
+    font-family: "Inter", sans-serif !important;
+    font-size: 20px !important;
+    font-weight: 400 !important;
+    line-height: 26px !important;
+}
+
+.elementor-accordion .elementor-tab-content {
+    font-family: "Inter", sans-serif !important;
+    font-size: 20px !important;
+    font-weight: 400 !important;
+    line-height: 26px !important;
+    color: #121212;
+}
+
+/* Specific Elementor widget typography overrides */
+.elementor-8291 .elementor-element.elementor-element-74c827e {
+    font-family: "Tablet Gothic", "Franklin Gothic Medium", "Arial Narrow", sans-serif !important;
+    font-size: 43px !important;
+    font-weight: 700 !important;
+    line-height: 44px !important;
+    color: #FFFFFF !important;
+}
+
+.elementor-8291 .elementor-element.elementor-element-ee368f7 {
+    font-family: "Tablet Gothic", "Franklin Gothic Medium", "Arial Narrow", sans-serif !important;
+    font-size: 43px !important;
+    font-weight: 700 !important;
+    line-height: 44px !important;
+    color: #571747 !important;
+}
+
+.elementor-8291 .elementor-element.elementor-element-8ceae75 {
+    font-family: "Inter", sans-serif !important;
+    font-size: 22px !important;
+    font-weight: 600 !important;
+    line-height: 33px !important;
+    color: #000000 !important;
+}
+
+.elementor-8291 .elementor-element.elementor-element-2158d67 {
+    font-family: "Inter", sans-serif !important;
+    font-size: 22px !important;
+    font-weight: 400 !important;
+    line-height: 34px !important;
+    color: #FFFFFF !important;
+}
+
+.elementor-8291 .elementor-element.elementor-element-ad47f79,
+.elementor-8291 .elementor-element.elementor-element-42997e5 {
+    font-family: "Inter", sans-serif !important;
+    font-size: 22px !important;
+    font-weight: 400 !important;
+    line-height: 30px !important;
+    color: #19191A !important;
+}
+
+.elementor-8291 .elementor-element.elementor-element-622456c .qodef-m-text,
+.elementor-8291 .elementor-element.elementor-element-00ebcdd .qodef-m-text,
+.elementor-8291 .elementor-element.elementor-element-14a18ee .qodef-m-text,
+.elementor-8291 .elementor-element.elementor-element-b772534 .qodef-m-text {
+    color: #571747 !important;
+    font-family: "Inter", sans-serif !important;
+    font-size: 22px !important;
+    font-weight: 500 !important;
+    line-height: 30px !important;
+    letter-spacing: -0.4px !important;
+}
+
+.elementor-8291 .elementor-element.elementor-element-47b5fbc .elementor-cta__description,
+.elementor-8291 .elementor-element.elementor-element-825d375 .elementor-cta__description {
+    font-family: "Inter", sans-serif !important;
+    font-size: 20px !important;
+    font-weight: 300 !important;
+    line-height: 1.8em !important;
+    color: #FFFFFF !important;
+}
+
+.elementor-8291 .elementor-element.elementor-element-a0891a3 .elementor-heading-title {
+    font-family: "Tablet Gothic", "Franklin Gothic Medium", "Arial Narrow", sans-serif !important;
+    font-size: 45px !important;
+    font-weight: bold !important;
+    line-height: 1.2em !important;
+    color: #571747 !important;
+}

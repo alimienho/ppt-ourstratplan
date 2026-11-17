@@ -81248,7 +81248,8 @@ body:not(.home) .qodef-header-navigation>ul>li>a {
   display: none;
 }
 
-.qodef-fullscreen-menu>ul>li>a {
+.qodef-fullscreen-menu>ul>li>a,
+.qodef-mobile-header-navigation>ul>li>a {
   font-family: 'Tablet Gothic', sans-serif !important;
 }
 
